@@ -6,7 +6,7 @@
 name: NonStatic
 
 # Short bio or description (displayed in the header)
-description:  * Backend service developer, * ex-mobile phone software developer and tester,  * ex-project lead.
+description:  Backend service developer, ex-mobile phone software developer and tester, ex-project lead.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://klein-hu.github.io/images/EggOwl.png
@@ -84,5 +84,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
-theme: jekyll-theme-tactile
