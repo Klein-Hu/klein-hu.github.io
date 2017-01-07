@@ -5,7 +5,7 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-disqus: nonstatic
+disqus: klein-hu
 google_analytics: nonstatic
 title: NonStatic
 
@@ -24,7 +24,7 @@ author:
   twitter: Klein_Hu
   pinterest: 
   linkedin: 
-  bio: Software eveloper and tester
+  bio: Software developer and tester
   email_md5: 
 
 rss_path: feed.xml
