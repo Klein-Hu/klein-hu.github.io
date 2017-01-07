@@ -13,12 +13,6 @@ After compare several different blog site, I eventually decide to use github.io 
 
 This is the first one.
 
+---
 
-
-
-
-**dbyll** is minimalist, stylish theme for jekyll. I like it!
-
-#### dbyll is on GitHub
-
-<a class="btn btn-default" href="https://github.com/dbtek/dbyll">Grab your copy now!</a>
+<a class="btn btn-default" href="https://github.com/dbtek/dbyll"><b>dbyll on GitHub</b></a> is minimalist, stylish theme for jekyll. I like it! 
