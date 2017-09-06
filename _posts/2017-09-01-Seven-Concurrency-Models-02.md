@@ -10,6 +10,8 @@ published: false
 
 This is the reading notes of Paul Butcher's *Seven Concurrency Models in Seven Weeks* - Functional Programming. The sample code is in [Clojure](http://clojure.org).
 
+I'm not an expert of Clojure nor functional programming. So only understand part of the story this time.
+
 **Imperative Program**: consists of a series of statments that change global state when executed.
 **Functional Program**: models computation as the evaluation of expressions, which are first-class and side-effect-free.
 
@@ -19,6 +21,9 @@ Concurrent programming in imperative languages is difficult because of the preva
 * Reduce a sequence to a single (possibly complex) value with `reduce`
 * Parallelize a reduce operation with `fold`
 
+`map` is the data transformation. `reduce` is the data consumption. The transformation and consumption is user defined functions.
+
+`map` should be easily parallelized. But `reduce` may not. `fold` can't work with a lazy sequence, because there is no way to perform binary chop on it.
 
 ---
 ![E=mc^2]({{ site.url }}/assets/images/emc2.gif)
