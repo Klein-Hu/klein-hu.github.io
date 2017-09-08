@@ -5,7 +5,7 @@ categories: [tech]
 tags: [design-pattern, concurrency, parallel, thread, lock, read-notes]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 This is the reading notes of Paul Butcher's *Seven Concurrency Models in Seven Weeks* - Functional Programming. The sample code is in [Clojure](http://clojure.org).
@@ -24,6 +24,16 @@ Concurrent programming in imperative languages is difficult because of the preva
 `map` is the data transformation. `reduce` is the data consumption. The transformation and consumption is user defined functions.
 
 `map` should be easily parallelized. But `reduce` may not. `fold` can't work with a lazy sequence, because there is no way to perform binary chop on it.
+
+**Dataflow programming**: Whenever the data associated with a function’s inputs becomes available, that function is executed. And each function could (theoretically, at least) execute concurrently. This style of execution is called dataflow programming.
+
+**Referentially transparent**: anywhere an invocation of the function appears, we can replace it with its result without changing the behavior of the program. This is very important to functional programming. Clojure is impure functional programming language and its function could have side effect.
+
+The primary benefit of functional programming is **confidence**, confidence that your program does what you think it does. But functional code will be less efficient than its imperative equivalent.
+
+### Open Readings
+1. [Java lambda expressions](http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
+2. [Java streams](http://docs.oracle.com/javase/tutorial/collections/streams/index.html)
 
 ---
 ![E=mc^2]({{ site.url }}/assets/images/emc2.gif)
