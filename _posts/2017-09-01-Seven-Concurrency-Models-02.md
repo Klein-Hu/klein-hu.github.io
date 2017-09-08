@@ -32,8 +32,8 @@ Concurrent programming in imperative languages is difficult because of the preva
 The primary benefit of functional programming is **confidence**, confidence that your program does what you think it does. But functional code will be less efficient than its imperative equivalent.
 
 ### Open Readings
-1. [Java lambda expressions](http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
-2. [Java streams](http://docs.oracle.com/javase/tutorial/collections/streams/index.html)
+1. [Java lambda expressions](http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html){:target="_blank"}
+2. [Java streams](http://docs.oracle.com/javase/tutorial/collections/streams/index.html){:target="_blank"}
 
 ---
 ![E=mc^2]({{ site.url }}/assets/images/emc2.gif)
