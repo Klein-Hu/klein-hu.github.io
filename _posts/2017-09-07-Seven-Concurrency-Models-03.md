@@ -36,11 +36,11 @@ Clojure’s functional nature leads to code with few mutable variables. Typicall
 
 ### Open Readings
 1. [Understanding Clojure’s PersistentVector Implementation](http://blog.higher-order.net/2009/02/01/understanding-clojures-persistentvector-implementation){:target="_blank"}
-2. The implementation of PersistentHashMap using a[Hash Array Mapped Trie](https://en.wikipedia.org/wiki/Hash_array_mapped_trie){:target="_blank"}
-3. [Persistent Data Structures and Managed References: Clojure’s Approach to Identity and State](https://www.infoq.com/presentations/Value-Identity-State-Rich-Hickey)
-4. [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy)
-5. [The Database as a Value](https://www.infoq.com/presentations/Datomic-Database-Value)
-6. [Transactional Memory in GCC](http://gcc.gnu.org/wiki/TransactionalMemory)
+2. The implementation of PersistentHashMap using a [Hash Array Mapped Trie](https://en.wikipedia.org/wiki/Hash_array_mapped_trie){:target="_blank"}
+3. [Persistent Data Structures and Managed References: Clojure’s Approach to Identity and State](https://www.infoq.com/presentations/Value-Identity-State-Rich-Hickey){:target="_blank"}
+4. [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy){:target="_blank"}
+5. [The Database as a Value](https://www.infoq.com/presentations/Datomic-Database-Value){:target="_blank"}
+6. [Transactional Memory in GCC](http://gcc.gnu.org/wiki/TransactionalMemory){:target="_blank"}
 
 ---
 ![E=mc^2]({{ site.url }}/assets/images/emc2.gif)
