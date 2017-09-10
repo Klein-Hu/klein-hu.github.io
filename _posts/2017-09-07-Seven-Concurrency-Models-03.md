@@ -5,7 +5,7 @@ categories: [tech]
 tags: [design-pattern, concurrency, parallel, thread, lock, read-notes]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 This is the reading notes of Paul Butcher's *Seven Concurrency Models in Seven Weeks* - "The Clojure Way — Separating Identity from State". The sample code is in [Clojure](http://clojure.org).
