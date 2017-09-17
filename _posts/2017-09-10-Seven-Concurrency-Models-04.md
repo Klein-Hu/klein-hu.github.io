@@ -10,7 +10,7 @@ published: true
 
 This is the reading notes of Paul Butcher's *Seven Concurrency Models in Seven Weeks* - "Actor". The sample code is in [Elixir](http://elixir-lang.org/).
 
-**Actor Model** is about many processes (definition of process in Erlang or Elixir is different from normal OS concept) communicate via message queue. It does not need any lock and state sharing between processes.
+**Actor Model** is about many processes (definition of process in Erlang or Elixir is different from normal OS concept) communicate via message queue. It does not need any lock and state sharing between processes. Each actor has a mailbox that stores messages until they’re handled
 
 Obviously, if process A wants to send a reply to process B, the original message and reply message should have the same "tag"/"id" to identify the context.
 
