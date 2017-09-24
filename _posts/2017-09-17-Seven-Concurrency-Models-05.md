@@ -23,12 +23,13 @@ Buffer Types:
 
 **Thread Pool** is good for CPU-insentive tasks, which means the thread will be used in a short time and returned back to the pool for reuse. But if threads need communicate with each other, threads in the pool will eventually be empty because all of them may waiting for something. In this case, the **Event-driven** programming will be the way to go, which is like the UI programming solution. But this will also introduce complexity of the mix of state and concurrency. Finally solution: **Go Blocks**. **go** is the macro in Clojure and Lisps. When threads from pool running the macro, it will break in to several pieces and each time execute one piece and then update the state and wait for the next thread pick it up to execute the next piece.
 
+Clojure is not only server side. Google has a [Clojure Library](https://developers.google.com/closure/library/) which is for JavaScript.
 
 ### Open Readings
 1. [Core Async Go Macro Internals - Part I](https://www.youtube.com/watch?v=R3PZMIwXN_g)
 2. [Core Async Go Macro Internals - Part II](https://www.youtube.com/watch?v=SI7qtuuahhU)
 3. [The State Machines of core.async](http://hueypetersen.com/posts/2013/08/02/the-state-machines-of-core-async/)
-
+4. [ClojureScript](http://clojurescript.com), not based on JVM but compile to JavaScript.
 
 ---
 ![E=mc^2]({{ site.url }}/assets/images/emc2.gif)
