@@ -5,7 +5,7 @@ categories: [tech]
 tags: [design-pattern, concurrency, parallel, thread, lock, read-notes]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 This is the reading notes of Paul Butcher's *Seven Concurrency Models in Seven Weeks* - "Data Parallelism". The sample code is in C and [OpenCL](https://www.khronos.org/opencl/).
@@ -25,7 +25,7 @@ Data parallelism is ideal whenever you’re faced with a problem where large amo
 Optimizing an OpenCL kernel can be tricky, and effective optimization often depends on understanding underlying architectural details. This can be a particular issue if you need to write high-performance cross-platform code.
 
 ### Open Readings
-1. 
+1. [NVIDIA CUDA Zone](https://developer.nvidia.com/cuda-zone)
 
 ---
 ![E=mc^2]({{ site.url }}/assets/images/emc2.gif)
