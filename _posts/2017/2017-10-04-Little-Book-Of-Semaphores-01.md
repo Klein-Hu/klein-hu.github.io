@@ -5,7 +5,7 @@ categories: [tech]
 tags: [design-pattern, concurrency, parallel, thread, lock, read-notes, semaphore]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 This is the reading notes of Allen B. Downey's *The Little Book of Semaphores* - "Introduction". The sample code is in Python-like language.
