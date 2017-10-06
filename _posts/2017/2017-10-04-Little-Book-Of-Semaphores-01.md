@@ -13,13 +13,14 @@ This is the reading notes of Allen B. Downey's *The Little Book of Semaphores* -
 Basic knowledge and concepts. But two puzzles are interesting:
 
 #### Puzzle 1
-Assume the `count` is a global variable and `temp` is a local one. If below loop is the thread body of 100 threads, what is the smallest possible value of `count` after all threads have completed.
+Assume the `count` is a global variable and `temp` is a local one. 
 
 ```
 for i in range(100):
     temp = count
     count = temp + 1
 ```
+**Question**: If below loop is the thread body of 100 threads, what is the smallest possible value of `count` after all threads have completed?
 
 #### Puzzle 2
 You and Bob operate a nuclear reactor that you monitor from remote stations. Most of the time, both of you are watching for
