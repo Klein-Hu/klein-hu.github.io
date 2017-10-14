@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Little Book of Semaphores Reading Notes - 01
+title: The Little Book of Semaphores Reading Notes - Classic Synchronization Problems
 categories: [tech]
 tags: [design-pattern, concurrency, parallel, thread, lock, read-notes, semaphore]
 fullview: false
