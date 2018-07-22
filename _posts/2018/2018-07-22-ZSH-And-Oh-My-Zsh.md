@@ -7,6 +7,8 @@ fullview: false
 comments: true
 ---
 
+Last time using Linux/UNIX as daily work environment was still in 2004-2008. After 10 yeas, seems user experience on Linux has been improved a lot. My home laptop is on Ubuntu 18.04 and my daughter enjoys WPS on Ubuntu 16.04 every day.
+
 ## Why ZSH
 
 Boring BASH!
