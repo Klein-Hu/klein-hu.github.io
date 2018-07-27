@@ -1,4 +1,7 @@
-_config.yml
 _site/*
+vendor/*
+
+_config.yml
 *Thumbs.db
 Gemfile.lock
+.bundle
