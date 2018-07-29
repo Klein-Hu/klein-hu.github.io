@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automate the Life
-categories: [Thinking]
+categories: [Sharing]
 tags: [Life]
 fullview: false
 comments: true
