@@ -1,6 +1,6 @@
 ---
 layout: post
-title: YouTube Architecture
+title: YouTube Architecture (Jun. 2007)
 categories: [Reading]
 tags: [Career]
 fullview: false
