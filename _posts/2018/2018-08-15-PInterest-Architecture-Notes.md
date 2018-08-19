@@ -8,6 +8,7 @@ comments: true
 ---
 
 文字：[PInterest Architecture](http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html)
+
 讲座：[PInterest Architecture](https://www.infoq.com/presentations/Pinterest)
 
 本文亮点有两个：
@@ -17,7 +18,7 @@ comments: true
 
 ## PInterest 平台演进
 
-这篇文章最大的亮点在于把一个网站从无到有的架构变化一点一点的描述出来了。我整理成一个结构图如下：
+这篇文章最大的亮点在于把一个网站从无到有的架构变化一点一点的描述出来了。我整理成一个结构图如下。从图上可以清楚的看出从简单到复杂再到简单的过程。
 
 ![PInterest平台演进]({{ site.url }}/assets/images/PInterest.svg)
 
