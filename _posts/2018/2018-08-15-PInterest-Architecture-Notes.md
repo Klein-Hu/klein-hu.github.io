@@ -2,7 +2,7 @@
 layout: post
 title: PInterest Architecture (Apr. 2013)
 categories: [Reading]
-tags: [Career]
+tags: [Career, Architecture]
 fullview: false
 comments: true
 ---
