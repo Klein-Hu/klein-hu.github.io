@@ -17,7 +17,7 @@ comments: true
 * `BinaryPredicate`：二元表达式，类似一元表达式，但多数情况下两个元素来自于不同的range里。输出是`bool`。同样可以是函数指针或者函数对象。
 * `ForwardIterator`：单向iterator，只能从begin --> end。实际上`BidirectionalIterator`和`RandomIterator`同样也可以用作`ForwardIterator`。
 
-# 只读操作
+# Sequence 只读操作
 
 **注意**：以下操作均为只读操作，任何lambda或者函数指针都不能修改数据
 
@@ -26,27 +26,27 @@ comments: true
 |                | 功能                                                                                                    | 复杂度        |
 |----------------|---------------------------------------------------------------------------------------------------------|---------------|
 | **存在性判断**     |                                                                                                         |               |
-| all_of         | 是不是所有元素都满足条件                                                                                | O(n)          |
-| any_of         | 是不是有元素满足条件                                                                                    | O(n)          |
-| none_of        | 是不是不存在这样的元素                                                                                  | O(n)          |
+| `all_of`         | 是不是所有元素都满足条件                                                                                | O(n)          |
+| `any_of`         | 是不是有元素满足条件                                                                                    | O(n)          |
+| `none_of`        | 是不是不存在这样的元素                                                                                  | O(n)          |
 | **对每个元素访问** |                                                                                                         |               |
-| for_each       | 对每个元素进行只读访问                                                                                  | O(n)          |
+| `for_each`       | 对每个元素进行只读访问                                                                                  | O(n)          |
 | **查找**           |                                                                                                         |               |
-| find           | 简单找元素                                                                                              | O(n)          |
-| find_if        | 按条件找元素                                                                                            | O(n)          |
-| find_if_not    | 按反向条件找元素                                                                                        | O(n)          |
-| find_end       | 在`[first1, last1)`里面找`[first2, last2)`最后出现的位置。                                              | O(m*n)        |
-| find_first_of  | 在`[first1, last1)`里面找`[first2, last2)`里任何一个元素在`[first1, last1)`第一次出现的位置。           | O(m*n)        |
-| adjacent_find  | 在`[first1, last1)`里面找第一次出现的连续两个元素相同的情况。                                           | O(n)          |
+| `find`           | 简单找元素                                                                                              | O(n)          |
+| `find_if`        | 按条件找元素                                                                                            | O(n)          |
+| `find_if_not`    | 按反向条件找元素                                                                                        | O(n)          |
+| `find_end`       | 在`[first1, last1)`里面找`[first2, last2)`最后出现的位置。                                              | O(m*n)        |
+| `find_first_of`  | 在`[first1, last1)`里面找`[first2, last2)`里任何一个元素在`[first1, last1)`第一次出现的位置。           | O(m*n)        |
+| `adjacent_find`  | 在`[first1, last1)`里面找第一次出现的连续两个元素相同的情况。                                           | O(n)          |
 | **计数**           |                                                                                                         |               |
-| count          | 对`[first1, last1)`中所有`val`的个数进行计数                                                            | O(n)          |
-| count_if       | 有条件计数，对所有`pred`是`true`的情况计数。                                                            | O(n)          |
+| `count`          | 对`[first1, last1)`中所有`val`的个数进行计数                                                            | O(n)          |
+| `count_if`       | 有条件计数，对所有`pred`是`true`的情况计数。                                                            | O(n)          |
 | **对两个范围比较** |                                                                                                         |               |
-| mismatch       | 把`[first1, last1)`中每一个元素在`first2`开始的范围内进行比较，返回一个`pair`，表明第一个mismatch的地方 | O(n)          |
-| equal          | 判断两个range内的元素是不是都一样。                                                                     | O(n)          |
-| is_permutation | 判断一个range是不是另一个range里元素的另一种排列。                                                      | O(n) → O(n^2) |
-| search         | 在`[first1, last1)`里面找`[first2, last2)`第一次出现的位置。                                            | O(m*n)        |
-| search_n       | 在`[first1, last1)`里面找`val`连续出现`count`次的位置。                                                 | O(n)          |
+| `mismatch`       | 把`[first1, last1)`中每一个元素在`first2`开始的范围内进行比较，返回一个`pair`，表明第一个mismatch的地方 | O(n)          |
+| `equal          | 判断两个range内的元素是不是都一样。                                                                     | O(n)          |
+| `is_permutation | 判断一个range是不是另一个range里元素的另一种排列。                                                      | O(n) → O(n^2) |
+| `search`         | 在`[first1, last1)`里面找`[first2, last2)`第一次出现的位置。                                            | O(m*n)        |
+| `search_n`       | 在`[first1, last1)`里面找`val`连续出现`count`次的位置。                                                 | O(n)          |
 
 ## 存在性判断
 
