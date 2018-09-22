@@ -43,8 +43,8 @@ comments: true
 | `count_if`       | 有条件计数，对所有`pred`是`true`的情况计数。                                                            | O(n)          |
 | **对两个范围比较** |                                                                                                         |               |
 | `mismatch`       | 把`[first1, last1)`中每一个元素在`first2`开始的范围内进行比较，返回一个`pair`，表明第一个mismatch的地方 | O(n)          |
-| `equal          | 判断两个range内的元素是不是都一样。                                                                     | O(n)          |
-| `is_permutation | 判断一个range是不是另一个range里元素的另一种排列。                                                      | O(n) → O(n^2) |
+| `equal`          | 判断两个range内的元素是不是都一样。                                                                     | O(n)          |
+| `is_permutation` | 判断一个range是不是另一个range里元素的另一种排列。                                                      | O(n) → O(n^2) |
 | `search`         | 在`[first1, last1)`里面找`[first2, last2)`第一次出现的位置。                                            | O(m*n)        |
 | `search_n`       | 在`[first1, last1)`里面找`val`连续出现`count`次的位置。                                                 | O(n)          |
 
