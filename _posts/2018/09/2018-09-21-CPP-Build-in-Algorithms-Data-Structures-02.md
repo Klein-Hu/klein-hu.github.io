@@ -23,46 +23,46 @@ comments: true
 
 |                                    | 功能                                                                                                                         |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| 拷贝                               |                                                                                                                              |
+| **拷贝**                               |                                                                                                                              |
 | `copy`                             | 拷贝sequence。返回新range的新的`end`位置。                                                                                   |
 | `copy_n`                           | 拷贝sequence，只拷贝`n`个元素。返回新range的新的`end`位置。                                                                  |
 | `copy_if`                          | 只拷贝满足`pred`条件的元素。返回新range的新的`end`位置。                                                                     |
 | `copy_backward`                    | 反向拷贝到以`result`结束的位置                                                                                               |
-| 移动                               |                                                                                                                              |
+| **移动**                               |                                                                                                                              |
 | `move`                             | 类似`copy`但此处移动元素                                                                                                     |
 | `move_backward`                    | 类似`copy_backward`但此处移动元素                                                                                            |
-| 交换                               |                                                                                                                              |
+| **交换**                               |                                                                                                                              |
 | `swap`                             | 可以交换两个变量，也可以交换两个容器。交换容器的时候只要类型一致即可，大小不必须一样。                                       |
 | `swap_range`                       | 把`[first, last)`里面每一个元素按顺序跟`first2`开始的区域进行交换。返回第二个sequence的新的`end`位置。                       |
 | `iter_swap`                        | 交换两个iterator指向的object的值。`swap`交换的两个变量的值。                                                                 |
-| 对每个元素进行特定操作写入新的序列 |                                                                                                                              |
+| **对每个元素进行特定操作写入新的序列** |                                                                                                                              |
 | `transform`                        | 输入可以单一序列或者两个序列，对每个元素执行`op`或者`binary_op`，写入输出序列。返回新range的`end`位置。                      |
-| 替换                               |                                                                                                                              |
+| **替换**                               |                                                                                                                              |
 | `replace`                          | 在`[first, last)`之间把所有的`old_value`替换成`new_value`。判定相等的方式只有`operator==`                                    |
 | `replace_if`                       | 在`[first, last)`之间把所有满足`pred`的值都替换成`new_value`。                                                               |
 | `replace_copy`                     | 把`[first, last)`之间的元素拷贝到`result`的过程中，遇到`old_value`则向`result`中写入`new_value`。返回新range的`end`位置。    |
 | `replace_copy_if`                  | 把`[first, last)`之间的元素拷贝到`result`的过程中，遇到元素满足`pred`则向`result`中写入`new_value`。返回新range的`end`位置。 |
-| 填充                               |                                                                                                                              |
+| **填充**                               |                                                                                                                              |
 | `fill`                             | 给一个范围填充同一个值。                                                                                                     |
 | `fill_n`                           | 给从`first`开始的区域填充`n`个`val`。返回新range的`end`位置。                                                                |
-| 生成数据                           |                                                                                                                              |
+| **生成数据**                           |                                                                                                                              |
 | `generate`                         | 从`first`到`last`，调用`gen`生成值并填充进去                                                                                 |
 | `generate_n`                       | 从`first`开始，调用`n`次`gen`生成数据并写入。返回新range的`end`位置。                                                        |
-| 删除                               |                                                                                                                              |
+| **删除**                               |                                                                                                                              |
 | `remove`                           | 删除`[first,   last)`中所有的值为`val`的元素。返回新的`end`。                                                                |
 | `remove_if`                        | 删除`[first,   last)`中所有满足`pred`的元素。返回新的`end`。                                                                 |
 | `remove_copy`                      | 将`[first, last)`拷贝到`result`开始的新range过程中，忽略所有值为`val`的元素。                                                |
 | `remove_copy_if`                   | 将`[first, last)`拷贝到`result`开始的新range过程中，忽略所有满足`pred`的元素。                                               |
-| 去重                               |                                                                                                                              |
+| **去重**                               |                                                                                                                              |
 | `unique`                           | 去掉sequence里的连续重复，对于任何一个连续重复，只保留第一个element。**并不是去掉所有的重复元素**。                          |
 | `unique_copy`                      | 将`[first, last)`拷贝到`result`开始的新range过程中，忽略所有连续满足`operator==`的重复元素或者满足`pred`的连续重复元素。     |
-| 反转                               |                                                                                                                              |
+| **反转**                               |                                                                                                                              |
 | `reverse`                          | 将`[first, last)`范围内前后位置反转。内部调用了`iter_swap`。                                                                 |
 | `reverse_copy`                     | 将`[first, last)`范围拷贝到`result`开始的新位置，但元素顺序反转。                                                            |
-| 平移                               |                                                                                                                              |
+| **平移**                               |                                                                                                                              |
 | `rotate`                           | 效果类似汇编语言循环移位操作。返回值是原来的`first`。`middle`不是`[first,   last)`范围的中位，而是中间某个位置。             |
 | `rotate_copy`                      | 类似`rotate`，但实现的循环移位是在以`result`为开始的新range。                                                                |
-| 洗牌                               |                                                                                                                              |
+| **洗牌**                               |                                                                                                                              |
 | `shuffle`                          | 使用URNG(Uniform Random Number Generator)生成随机位置的shuffle算法。                                                         |
 | `random_shuffle`                   | 使用内建的随机数发生器来产生随机位置或是有用户指定的随机数发生器来生成随即位置。                                             |
 
