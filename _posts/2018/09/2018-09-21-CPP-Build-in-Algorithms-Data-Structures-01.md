@@ -16,6 +16,7 @@ comments: true
 * `UnaryPredicate`：一元表达式，输入是一个range中的元素，输出是bool。可以是函数指针或者函数对象，比如struct里面有个叫operator()(T input)的函数。这个函数指针或者operator()(T)接受的数据类型就是前面iterator指向的。
 * `BinaryPredicate`：二元表达式，类似一元表达式，但多数情况下两个元素来自于不同的range里。输出是`bool`。同样可以是函数指针或者函数对象。
 * `ForwardIterator`：单向iterator，只能从begin --> end。实际上`BidirectionalIterator`和`RandomIterator`同样也可以用作`ForwardIterator`。
+* `Generator`：没有输入arguments，返回一个跟当前范围类型一致的值。同样可以是函数指针或者函数对象。
 
 # Sequence 只读操作
 
