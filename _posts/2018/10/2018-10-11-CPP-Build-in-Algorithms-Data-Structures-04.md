@@ -80,3 +80,50 @@ template <class ForwardIterator, class T, class Compare>
 
 找到就返回`true`，找不到返回`false`，至于找到以后在什么位置，不知道。看上去没啥用，不如直接用`lower_bound`然后判断返回值的位置以及指向的值是不是等于`val`就得了。
 
+
+## 合并有序序列
+
+* `merge`
+* `inplace_merge`
+* `includes`
+* `set_union`
+* `set_intersection`
+* `set_difference`
+* `set_symmetric_difference`
+
+```C++
+template <class InputIterator1, class InputIterator2, class OutputIterator>
+  OutputIterator merge (InputIterator1 first1, InputIterator1 last1,
+                        InputIterator2 first2, InputIterator2 last2,
+                        OutputIterator result);
+
+template <class InputIterator1, class InputIterator2, class OutputIterator, class Compare>
+  OutputIterator merge (InputIterator1 first1, InputIterator1 last1,
+                        InputIterator2 first2, InputIterator2 last2,
+                        OutputIterator result, Compare comp);
+```
+
+两个有序序列`InputIterator1`，`InputIterator2`合并到新的有序序列`OutputIterator`。
+
+```C++
+template <class BidirectionalIterator>
+  void inplace_merge (BidirectionalIterator first, BidirectionalIterator middle,
+                      BidirectionalIterator last);
+
+template <class BidirectionalIterator, class Compare>
+  void inplace_merge (BidirectionalIterator first, BidirectionalIterator middle,
+                      BidirectionalIterator last, Compare comp);
+```
+
+把`[first,middle)`和`[middle,last)`合并成`[first,last)`。整个过程in-place。
+
+```C++
+template <class InputIterator1, class InputIterator2>
+  bool includes ( InputIterator1 first1, InputIterator1 last1,
+                  InputIterator2 first2, InputIterator2 last2 );
+
+template <class InputIterator1, class InputIterator2, class Compare>
+  bool includes ( InputIterator1 first1, InputIterator1 last1,
+                  InputIterator2 first2, InputIterator2 last2, Compare comp );
+```
+
