@@ -127,3 +127,142 @@ template <class InputIterator1, class InputIterator2, class Compare>
                   InputIterator2 first2, InputIterator2 last2, Compare comp );
 ```
 
+看看是不是`[first1,last1)`包含所有的`[first2,last2)`
+
+```C++
+template <class InputIterator1, class InputIterator2, class OutputIterator>
+  OutputIterator set_union (InputIterator1 first1, InputIterator1 last1,
+                            InputIterator2 first2, InputIterator2 last2,
+                            OutputIterator result);
+
+template <class InputIterator1, class InputIterator2,
+          class OutputIterator, class Compare>
+  OutputIterator set_union (InputIterator1 first1, InputIterator1 last1,
+                            InputIterator2 first2, InputIterator2 last2,
+                            OutputIterator result, Compare comp);
+```
+
+对于两个有序序列，得到两个有序序列的并集。返回值是the end of result。
+
+```C++
+template <class InputIterator1, class InputIterator2, class OutputIterator>
+  OutputIterator set_intersection (InputIterator1 first1, InputIterator1 last1,
+                                   InputIterator2 first2, InputIterator2 last2,
+                                   OutputIterator result);
+
+template <class InputIterator1, class InputIterator2,
+          class OutputIterator, class Compare>
+  OutputIterator set_intersection (InputIterator1 first1, InputIterator1 last1,
+                                   InputIterator2 first2, InputIterator2 last2,
+                                   OutputIterator result, Compare comp);
+```
+
+对于两个有序序列，得到两个有序序列的交集。返回值是the end of result。
+
+```C++
+template <class InputIterator1, class InputIterator2, class OutputIterator>
+  OutputIterator set_difference (InputIterator1 first1, InputIterator1 last1,
+                                 InputIterator2 first2, InputIterator2 last2,
+                                 OutputIterator result);
+
+template <class InputIterator1, class InputIterator2,
+          class OutputIterator, class Compare>
+  OutputIterator set_difference (InputIterator1 first1, InputIterator1 last1,
+                                 InputIterator2 first2, InputIterator2 last2,
+                                 OutputIterator result, Compare comp);
+```
+
+对于两个有序序列，得到所有在`[first1,last1)`但不在`[first2,last2)`中的元素——差集。返回值是the end of result。
+
+```C++
+template <class InputIterator1, class InputIterator2, class OutputIterator>
+  OutputIterator set_symmetric_difference (InputIterator1 first1, InputIterator1 last1,
+                                           InputIterator2 first2, InputIterator2 last2,
+                                           OutputIterator result);
+
+template <class InputIterator1, class InputIterator2,
+          class OutputIterator, class Compare>
+  OutputIterator set_symmetric_difference (InputIterator1 first1, InputIterator1 last1,
+                                           InputIterator2 first2, InputIterator2 last2,
+                                           OutputIterator result, Compare comp);
+```
+
+对于两个有序序列，得到所有在并集中但不在交集中的元素——对称差集。返回值是the end of result。
+
+## 堆
+
+* `push_heap`
+* `pop_heap`
+* `make_heap`
+* `sort_heap`
+* `is_heap`
+* `is_heap_until`
+
+```C++
+template <class RandomAccessIterator>
+  void push_heap (RandomAccessIterator first, RandomAccessIterator last);
+
+template <class RandomAccessIterator, class Compare>
+  void push_heap (RandomAccessIterator first, RandomAccessIterator last,
+                   Compare comp);
+```
+
+已有序列`[first,last)`的`[first,last-1)`部分是heap，此函数把调整后把`[first,last)`变成heap。
+
+```C++
+template <class RandomAccessIterator>
+  void pop_heap (RandomAccessIterator first, RandomAccessIterator last);
+
+template <class RandomAccessIterator, class Compare>
+  void pop_heap (RandomAccessIterator first, RandomAccessIterator last,
+                 Compare comp);
+```
+
+已有序列`[first,last)`是heap，`pop`之后原来第一个元素到了最后，`[first,last-1)`仍然是heap。
+
+```C++
+template <class RandomAccessIterator>
+  void make_heap (RandomAccessIterator first, RandomAccessIterator last);
+
+template <class RandomAccessIterator, class Compare>
+  void make_heap (RandomAccessIterator first, RandomAccessIterator last,
+                  Compare comp );
+```
+
+创建heap
+
+```C++
+template <class RandomAccessIterator>
+  void sort_heap (RandomAccessIterator first, RandomAccessIterator last);
+
+template <class RandomAccessIterator, class Compare>
+  void sort_heap (RandomAccessIterator first, RandomAccessIterator last,
+                  Compare comp);
+```
+
+已有序列`[first,last)`是heap，此函数将其进行排序，使得结果是升序。
+
+```C++
+template <class RandomAccessIterator>
+  bool is_heap (RandomAccessIterator first, RandomAccessIterator last);
+
+template <class RandomAccessIterator, class Compare>
+  bool is_heap (RandomAccessIterator first, RandomAccessIterator last,
+                Compare comp);
+```
+
+检查`[first,last)`是不是heap
+
+```C++
+template <class RandomAccessIterator>
+  RandomAccessIterator is_heap_until (RandomAccessIterator first,
+                                      RandomAccessIterator last);
+
+template <class RandomAccessIterator, class Compare>
+  RandomAccessIterator is_heap_until (RandomAccessIterator first,
+                                      RandomAccessIterator last
+                                      Compare comp);
+```
+
+找到不满足heap条件的第一个element。如果`[first,last)`是heap则返回`last`
+
