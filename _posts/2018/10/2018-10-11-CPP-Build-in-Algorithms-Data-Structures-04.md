@@ -21,7 +21,39 @@ comments: true
 
 ## 简表
 
-TODO
+|                          | **功能**                                                                                                                                                                                              |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **二分查找**                 |                                                                                                                                                                                                   |
+| `lower_bound`              | 找到第一个大于等于val的值的位置。如果存在并且有重复，就是从左到右第一个出现的位置；如果不存在，就是第一个比val大的位置，也就是如果插入这个val，需要插入的位置。此处位置指的是iterator，不是序号。 |
+| `upper_bound`              | 找到第一个大于val的值的位置。此处位置指的是iterator，不是序号。                                                                                                                                   |
+| `equal_range`              | 返回序列中等于val的值的范围，[first, last)。此处也都是iterator，不是序号。                                                                                                                        |
+| `binary_search`            | 找到就返回true，找不到返回false，至于找到以后在什么位置，不知道。                                                                                                                                 |
+| **合并有序序列**             |                                                                                                                                                                                                   |
+| `merge`                    | 两个有序序列InputIterator1，InputIterator2合并到新的有序序列OutputIterator。                                                                                                                      |
+| `inplace_merge`            | 把[first,middle)和[middle,last)合并成[first,last)。整个过程in-place。                                                                                                                             |
+| `includes`                 | 看看是不是[first1,last1)包含所有的[first2,last2)                                                                                                                                                  |
+| `set_union`                | 对于两个有序序列，得到两个有序序列的并集。返回值是the end of result。                                                                                                                             |
+| `set_intersection`         | 对于两个有序序列，得到两个有序序列的交集。返回值是the end of result。                                                                                                                             |
+| `set_difference`           | 对于两个有序序列，得到所有在[first1,last1)但不在[first2,last2)中的元素——差集。返回值是the   end of result。                                                                                       |
+| `set_symmetric_difference` | 对于两个有序序列，得到所有在并集中但不在交集中的元素——对称差集。返回值是the end of result。                                                                                                       |
+| **堆**                       |                                                                                                                                                                                                   |
+| `push_heap`                | 已有序列[first,last)的[first,last-1)部分是heap，此函数把调整后把[first,last)变成heap。                                                                                                            |
+| `pop_heap`                 | 已有序列[first,last)是heap，pop之后原来第一个元素到了最后，[first,last-1)仍然是heap。                                                                                                             |
+| `make_heap`                | 创建heap                                                                                                                                                                                          |
+| `sort_heap`                | 已有序列[first,last)是heap，此函数将其进行排序，使得结果是升序。                                                                                                                                  |
+| `is_heap`                  | 检查[first,last)是不是heap                                                                                                                                                                        |
+| `is_heap_until`            | 找到不满足heap条件的第一个element。如果[first,last)是heap则返回last                                                                                                                               |
+| **最大最小值**               |                                                                                                                                                                                                   |
+| `min`                      | 返回最小值。如果两个值一样，返回a                                                                                                                                                                 |
+| `max`                      | 返回最大值。如果两个值一样，返回a                                                                                                                                                                 |
+| `minmax`                   | 返回最小值和最大值组成的pair，<min_val, max_val>。                                                                                                                                                |
+| `min_element`              | 返回指向最小值的iterator。如果多个元素都满足条件，返回指向第一个的iterator。                                                                                                                      |
+| `max_element`              | 返回指向最大值的iterator。如果多个元素都满足条件，返回指向第一个的iterator。                                                                                                                      |
+| `minmax_element`           | 返回指向最小值和指向最大值组成的pair，<min_val_iter, max_val_iter>。                                                                                                                              |
+| **其他**                     |                                                                                                                                                                                                   |
+| `lexicographical_compare`  | 字典序比较：不考虑长度，一个一个字母从左到右比较，当出现不一样的字符时，以这两个不一样字符的比较结果决定整个字符串的比较结果。                                                                    |
+| `next_permutation`         | 按照字典序对序列找到下一个排列，in-place改变这个序列。如果成功，返回true；如果失败返回false。但false的时候可能prev_permutation能够正常工作。                                                      |
+| `prev_permutation`         | 按照字典序对序列找到下一个排列，in-place改变这个序列。如果成功，返回true；如果失败返回false。但false的时候可能next_permutation能够正常工作。                                                      |
 
 ## 二分查找
 
