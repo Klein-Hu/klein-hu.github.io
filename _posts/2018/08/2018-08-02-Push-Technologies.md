@@ -2,7 +2,7 @@
 layout: post
 title: Push Technologies
 categories: [Reading]
-tags: [Career, Architecture]
+tags: [Push, Framework]
 fullview: false
 comments: true
 ---

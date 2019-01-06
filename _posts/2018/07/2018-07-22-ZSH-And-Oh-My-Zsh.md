@@ -2,7 +2,7 @@
 layout: post
 title: ZSH and Oh-My-Zsh
 categories: [Tips]
-tags: [Linux, Tools]
+tags: [Linux, Tools, Shell]
 fullview: false
 comments: true
 ---

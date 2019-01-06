@@ -2,7 +2,7 @@
 layout: post
 title: First 2.5 weeks of Tech Lead
 categories: [Sharing]
-tags: [Career, Tech Lead]
+tags: [Career, TechLead]
 fullview: false
 comments: true
 ---

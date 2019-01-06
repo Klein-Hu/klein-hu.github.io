@@ -2,7 +2,7 @@
 layout: post
 title: DP - Maximum Product Subarray
 categories: [Algorithm]
-tags: [LeetCode, DP, Algorithm]
+tags: [LeetCode, DP]
 fullview: false
 comments: true
 ---

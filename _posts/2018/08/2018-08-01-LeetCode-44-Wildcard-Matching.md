@@ -2,7 +2,7 @@
 layout: post
 title: Wildcard Matching
 categories: [Algorithm]
-tags: [LeetCode, String, Algorithm]
+tags: [LeetCode, String]
 fullview: false
 comments: true
 ---

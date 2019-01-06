@@ -2,7 +2,7 @@
 layout: post
 title: YouTube Architecture (Jun. 2007)
 categories: [Reading]
-tags: [Career, Architecture]
+tags: [Architecture, CaseStudy]
 fullview: false
 comments: true
 ---

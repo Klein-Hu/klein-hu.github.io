@@ -2,7 +2,7 @@
 layout: post
 title: Automate the Life
 categories: [Sharing]
-tags: [Life]
+tags: [LifeAutomation, Tools]
 fullview: false
 comments: true
 ---

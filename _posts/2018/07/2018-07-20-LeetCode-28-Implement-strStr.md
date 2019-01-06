@@ -2,7 +2,7 @@
 layout: post
 title: String Matching - Sunday Algorithm
 categories: [Algorithm]
-tags: [LeetCode, String, Algorithm]
+tags: [LeetCode, String]
 fullview: false
 comments: true
 ---

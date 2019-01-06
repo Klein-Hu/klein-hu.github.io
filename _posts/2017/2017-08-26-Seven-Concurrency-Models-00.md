@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Seven Concurrency Models in Seven Weeks Reading Notes - 00
-categories: [tech]
-tags: [design-pattern, concurrency, parallel, read-notes]
+categories: [Reading]
+tags: [Design, Design-pattern, Concurrency, Parallel]
 fullview: false
 comments: true
 ---

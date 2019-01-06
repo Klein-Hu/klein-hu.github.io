@@ -2,7 +2,7 @@
 layout: post
 title: DP - Distinct Subsequences
 categories: [Algorithm]
-tags: [LeetCode, Algorithm, DP]
+tags: [LeetCode, DP]
 fullview: false
 comments: true
 ---

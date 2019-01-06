@@ -2,7 +2,7 @@
 layout: post
 title: Flickr Architecture (Sep. 2007)
 categories: [Reading]
-tags: [Career, Architecture]
+tags: [Architecture, CaseStudy]
 fullview: false
 comments: true
 ---

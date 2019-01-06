@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 2017 New Year Resolution
-categories: [general, life]
-tags: [plan]
+categories: [General]
+tags: [Planning]
 fullview: true
 comments: true
 ---

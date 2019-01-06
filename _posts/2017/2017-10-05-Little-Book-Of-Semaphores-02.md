@@ -1,8 +1,8 @@
 ---
 layout: post
 title: The Little Book of Semaphores Reading Notes - 02
-categories: [tech]
-tags: [design-pattern, concurrency, parallel, thread, lock, read-notes, semaphore]
+categories: [Reading]
+tags: [Design, Design-pattern, Concurrency, Parallel, Semaphore, Synchronization]
 fullview: false
 comments: true
 published: false

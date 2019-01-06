@@ -2,7 +2,7 @@
 layout: post
 title: Sudoku? Special Case of 8-Queens
 categories: [Algorithm]
-tags: [LeetCode, Matrix, Algorithm, 8-Queens]
+tags: [LeetCode, Matrix, 8-Queens]
 fullview: false
 comments: true
 ---
